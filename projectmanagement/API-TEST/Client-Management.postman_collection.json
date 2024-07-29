@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "49ecfa03-2121-4370-bb68-28a7fa904d32",
+		"name": "Client-Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31777149",
+		"_collection_link": "https://galactic-sunset-9282.postman.co/workspace/pratice~c50b551c-8ef3-4b1d-ae13-82d2ce0450db/collection/31777149-49ecfa03-2121-4370-bb68-28a7fa904d32?action=share&source=collection_link&creator=31777149"
+	},
+	"item": [
+		{
+			"name": "GetAll Clients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8096/client/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8096",
+					"path": [
+						"client",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"HDFC Bank\",\r\n  \"address\": \"456 Business Rd\",\r\n  \"workLocation\": \"New York\",\r\n  \"projects\": [\r\n    {\r\n      \"projectName\": \"Project Life Insurance\",\r\n      \"revenue\": 5000000,\r\n      \"startDate\": \"2024-01-15\",\r\n      \"endDate\": \"2024-06-30\"\r\n    },\r\n    {\r\n      \"projectName\": \"Project Car Loan\",\r\n      \"revenue\": 75000,\r\n      \"startDate\": \"2024-03-01\",\r\n      \"endDate\": \"2024-09-30\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8096/client/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8096",
+					"path": [
+						"client",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update client",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n  \"name\": \"HDFC Bank\",\r\n  \"address\": \"456 Business Rd\",\r\n  \"workLocation\": \"New York\",\r\n  \"projects\": [\r\n    {\r\n      \"projectName\": \"Project Life Insurance\",\r\n      \"revenue\": 5000000,\r\n      \"startDate\": \"2024-01-15\",\r\n      \"endDate\": \"2024-06-30\"\r\n    },\r\n    {\r\n      \"projectName\": \"Project Car Loan\",\r\n      \"revenue\": 75000,\r\n      \"startDate\": \"2024-03-01\",\r\n      \"endDate\": \"2024-09-30\"\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8096/client/update/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8096",
+					"path": [
+						"client",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClient",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8096/client/get/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8096",
+					"path": [
+						"client",
+						"get",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
