@@ -2,7 +2,7 @@
 
 The Client-Management Application (Basic UI and Java API using SQLite) is responsible for handling HTTP requests related to client details. It provides endpoints to create, retrieve, update, and delete client details in the system with will be stored in the SQLite DB.
 
-Technical Stack
+**Technical Stack**
 Java: Programming language used for backend development.
 Spring Boot: Framework used for building the application.
 SQLite: Database used for data storage.
@@ -10,7 +10,7 @@ ReactJS: Frontend framework used for the user interface.
 Maven: Build automation tool.
 
 
-Endpoints 
+**Endpoints **
 
 Create Client Details:
 Method: POST
@@ -42,7 +42,7 @@ Endpoint: /client/get/{id}
 Description: Retrieves a client detail entry by its ID.
 
 
-UI:
+**UI**:
 Home Page
 
 Home.png
